@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #1e272e;
+    color: #d2dae2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    max-width: 700px;
+    background: #2f3640;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+.section {
+    margin-bottom: 25px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.6s forwards;
+}
+.section h2 {
+    color: #00a8ff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00a8ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #00a8ff;
+    transition: transform 0.5s ease;
+}
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+.profile-info p {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+    color: #f5f6fa;
+}
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.animated-section:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.animated-section:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.animated-photo {
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #0e307a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .back-btn:hover {
+      background-color: #1c1d4d;
+  }
+
+  .fixed-top-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    background-color: #0e307a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000; /* Pastikan tombol berada di depan elemen lainnya */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+
+  .fixed-top-left:hover {
+    background-color: #1c1d4d;
+  }

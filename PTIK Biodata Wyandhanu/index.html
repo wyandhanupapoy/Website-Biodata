@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Biodata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">Wyandhanu Maulidan Nugraha</h1>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <div class="profile-pic-container">
+                    <img src="profil.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+                <h2>Hello, I'm <span class="highlight">Wyandhanu Maulidan Nugraha</span></h2>
+                <p>Welcome to my personal website. I'm a student at Politeknik Negeri Bandung, deeply passionate about game development.</p>
+                <button class="hero-button">Learn More</button>
+            </div>
+        </section>
+        
+        <section class="skills-section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Game Development</h3>
+                    <p>C#, Unity, Blender3D</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Design</h3>
+                    <p>UI/UX Design, Photoshop, Figma</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Other Skills</h3>
+                    <p>Project Management, Communication</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">Juara II Lomba Cipta Game Edukasi Perpajakan<br>Direktorat Jenderal Pajak</div>
+                <div class="portfolio-item">Lomba Ki Hajar Dewantara</div>
+                <div class="portfolio-item">FLS2N Solo Gitar</div>
+                <div class="portfolio-item">Computer Technician<br>PT. SGM & PT. Pasir Indah</div>
+                <div class="portfolio-item">Lomba Ki Hajar Dewantara</div>
+                <div class="portfolio-item">Bandung Taekwondo International Invitation<br>Juara I Bandung Pandawa 2 Taekwondo<br>Juara I Bandung Taekwondo Festival<br>Juara I Bandung Pandawa Tekwondo Championship<br>Juara I Walikota Bandung Cup XIII<br>Juara III Walikota Cup XVI</div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <button onclick="window.location.href='../index.html'" class="back-btn fixed-top-left">Kembali</button>
+    <script src="scripts.js"></script>
+</body>
+</html>

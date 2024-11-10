@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    color:#ffffff;
+  }
+  
+  .container {
+    width: 800px;
+    height: 660px;
+    background-color:#70a5f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(244, 243, 243, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .browser-bar {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .white { background-color: #ffffff; }
+  .chocholate { background-color: #D2B48C; }
+  .blue { background-color:#70a5f4;}
+  
+  h2 {
+    font-size: 14px;
+    color:#D2B48C;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden; /* Menjaga agar foto tetap bulat */
+  }
+  
+  .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mengatur gambar agar mengisi lingkaran */
+    display: block;
+  };
+  
+  .profile h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .status {
+    font-size: 14px;
+    background-color:#D2B48C;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color:#ffffff;
+  }
+  
+  .left-column, .right-column {
+    width: 50%;
+    float: left;
+    padding: 15px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h3 {
+    font-size: 16px;
+    background-color:#D2B48C;
+    padding: 5px;
+    border-radius: 10px;
+    color:#ffffff;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  .skills .skill {
+    margin: 10px 0;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    height: 5px;
+    border-radius: 5px;
+  }
+  
+  .progress-bar div {
+    height: 100%;
+    background: #b9bedd;
+    border-radius: 5px;
+  }
+  
+  .contact p {
+    margin-bottom: 5px;
+  }
+
+  .back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #0e307a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .back-btn:hover {
+      background-color: #1c1d4d;
+  }
+
+  .fixed-top-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    background-color: #0e307a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000; /* Pastikan tombol berada di depan elemen lainnya */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+
+  .fixed-top-left:hover {
+    background-color: #1c1d4d;
+  }

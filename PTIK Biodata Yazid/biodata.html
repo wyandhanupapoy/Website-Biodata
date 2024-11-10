@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Diri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #f2f2f2;
+    }
+    .biodata {
+      width: 800px;
+      background-color: #fff;
+      display: flex;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .left-column {
+      width: 32%;
+      background-color: #4f758a;
+      color: #fff;
+      padding: 20px;
+    }
+    .left-column img {
+      width: 90%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .left-column h2 {
+      margin: 10px 0;
+    }
+    .section-title {
+      background-color: #15c1ff;
+      padding: 10px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .content {
+      margin-bottom: 20px;
+    }
+    .right-column {
+      width: 70%;
+      padding: 20px;
+    }
+    .education, .experience {
+      margin-bottom: 20px;
+    }
+    .education h3, .experience h3 {
+      margin: 0;
+    }
+    .item {
+      margin-bottom: 15px;
+    }
+    .item h4 {
+      margin: 5px 0;
+      font-weight: normal;
+    }
+    .timeline {
+      display: flex;
+      align-items: center;
+    }
+    .dot {
+      height: 10px;
+      width: 10px;
+      background-color: #703d19;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .details {
+      font-size: 14px;
+      color: #000000;
+    }
+    .back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #0e307a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .back-btn:hover {
+      background-color: #1c1d4d;
+  }
+
+  .fixed-top-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    background-color: #0e307a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000; /* Pastikan tombol berada di depan elemen lainnya */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+
+  .fixed-top-left:hover {
+    background-color: #1c1d4d;
+  }
+    
+  </style>
+</head>
+<body>
+
+<div class="biodata">
+  <!-- bagian kiri -->
+  <div class="left-column">
+    <img src="IMG_6918.jpg" alt="Profile Picture">
+    <h2>Yazid Alrasyid</h2>
+    
+    <div class="section">
+      <div class="section-title">Profile</div>
+      <p>Sebatas orang suka review laptop dan komponen PC</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Contact</div>
+      <p>📞 0823-2033-6868</p>
+      <p>✉️ <a href="mailto:yazidalrasyid821@gmail.com">My Email</a></p>
+      <p>📍 Bandung, Indonesia</p>
+      <p>🌐 <a href="https://gaming.lenovo.com/member/dFywqyjqNl">My Information</a></p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Hobbies</div>
+      <p>💻 Tech Reviewer</p>
+      <p>🎮 Gaming</p>
+
+    </div>
+  </div>
+
+  <!-- bagian kanan -->
+  <div class="right-column">
+    <!-- Education Section -->
+    <div class="education">
+      <div class="section-title">Education</div>
+      
+      <div class="item">
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>SDN Cilangkap Jakarta</h3>
+        </div>
+        <h4>2011-2013</h4>
+        <p class="details">moving to Bandung</p>
+      </div>
+
+      <div class="item">
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>SD Angkasa 3 Jakarta</h3>
+        </div>
+        <h4>2013-2017</h4>
+        <p class="details">Graduated</p>
+      </div>
+
+      <div class="item">
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>SMPN 26 Bandung</h3>
+        </div>
+        <h4>2017-2020</h4>
+        <p class="details">Graduated</p>
+      </div>
+
+      <div class="item">
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>SMAN 9 Bandung</h3>
+        </div>
+        <h4>2020-2023</h4>
+        <p class="details">Graduated</p>
+      </div>
+
+      <div class="item">
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>Politeknik Negeri Bandung</h3>
+        </div>
+        <h4>2024-Recent</h4>
+        <p class="details">Studying in D3 Informatics Engineering</p>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="experience">
+      <div class="section-title">Experience</div>
+      
+      <div class="item">
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>Reviewer Tech Laptop</h3>
+        </div>
+        <h4>Bandung / 2022-2024</h4>
+        <p class="details">Review Laptop and benchmark Lenovo Legion 5 16AHP9, Lenovo Legion 7i 16IRX9, Lenovo LOQ 15APH8, Lenovo Gaming 3i 15IAH7</p>
+      </div>
+
+      <div class="item">
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>Tech Support Lenovo</h3>
+        </div>
+        <h4>Bandung / 2022-Recent</h4>
+        <p class="details">Helping User in Media Social (discord, and reddit)</p>
+      </div>
+
+    <!-- Skill Section -->
+    <div class="Skill">
+      <div class="section-title">Skill</div>
+      <div class="item">
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>Soft Skill</h3>
+        </div>
+          <p class="details">C++, C, Java, JS, Python</p>
+      </div>
+      <div class="item">
+        <div class="timeline">
+          <div class="dot"></div>
+          <h3>Hard Skill</h3>
+        </div>
+        <p class="details">Maintenance Laptop/Computer, Overclocking, Benchmarking</p>
+      </div>
+      <button onclick="window.location.href='../index.html'" class="back-btn fixed-top-left">Kembali</button>
+
+
+</body>
+</html>
